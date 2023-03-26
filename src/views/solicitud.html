@@ -130,6 +130,7 @@
         </form>
 
         <script>
+
           const btn = document.getElementById('submit');
 
           document.getElementById('formulario')
@@ -144,6 +145,7 @@
               emailjs.sendForm(serviceID, templateID, this)
                 .then(() => {
                   btn.value = 'Enviar';
+                  document.getElementById('formulario').reset();
                   Swal.fire(
                     'Bien Hecho!',
                     'Tu solicitud se envio con exito!',
@@ -151,6 +153,7 @@
                     )
                 }, (err) => {
                   btn.value = 'Enviar';
+                  document.getElementById('formulario').reset();
                   Swal.fire(
                     'Error!',
                     'Error porfavor vuelve a intentarlo!',
