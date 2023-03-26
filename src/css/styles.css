@@ -51,6 +51,15 @@ body {
     color: #fff;
     padding:  4px 20px;
     background-color: #fd5308;
+    border: 2px solid transparent;
+    transition: .2s ease;
+}
+
+#top-header a:hover{
+    transition: .2s ease;
+    color: #fd5308;
+    background-color: transparent;
+    border-color: #fd5308;
 }
 
 /* HEADER */
